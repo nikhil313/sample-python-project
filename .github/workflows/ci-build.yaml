@@ -1,13 +1,13 @@
 name : ci
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths-ignore:
       - 'manifests/**'
       - '**/*.gitattributes'
       - '**/*.gitignore'
       - '**/*.md'
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
