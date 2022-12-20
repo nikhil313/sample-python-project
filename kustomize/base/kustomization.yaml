@@ -7,4 +7,4 @@ namespace: default
 images:
 - name: sample-python-app
   newName: nikhilk21/sample-python-app
-  newTag: de9aef9631755e7b28172b3cbaf9a30a3d4ec598
+  newTag: f90629a0f6e48b343ccf0f7181dc3ebddea59676
