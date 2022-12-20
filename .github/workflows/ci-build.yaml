@@ -25,6 +25,7 @@ jobs:
           file: ./Dockerfile
           load: true
           tags: nikhilk21/sample-python-app:${{ github.sha }}
+          push: true
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
