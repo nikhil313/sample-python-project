@@ -24,7 +24,7 @@ jobs:
           context: .
           file: ./Dockerfile
           load: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/sample-python-app:${{github.event.number}}
+          tags: nikhilk21/sample-python-app:${{ github.sha }}
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
@@ -44,7 +44,7 @@ jobs:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       run: |
        cd kustomize/base
-       kustomize edit set image sample-python-app=$DOCKER_USERNAME/sample-python-app:${{github.event.number}}
+       kustomize edit set image sample-python-app=$DOCKER_USERNAME/sample-python-app:${{ github.sha }}
        cat kustomization.yaml
 
     - name: Commit files
