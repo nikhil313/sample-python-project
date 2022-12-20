@@ -23,7 +23,6 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          load: true
           tags: nikhilk21/sample-python-app:${{ github.sha }}
           push: true
   deploy:
