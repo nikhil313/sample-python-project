@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: flaskapi
-          image: nikhilk21/sample-python-app:latest
+          image: sample-python-app
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
